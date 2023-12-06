@@ -1,5 +1,5 @@
 import { styled, StyleSheetManager } from "styled-components";
-import { spaceSchema, blue } from "../../utils";
+import { spaceSchema, balanced } from "../../utils";
 
 export const Layers = styled.div`
   display: grid;
@@ -7,7 +7,7 @@ export const Layers = styled.div`
   (props) =>  spaceSchema[props.gutter] ?? spaceSchema.l
   };
   background-color: ${
-  (props) =>  blue[props.color] ?? blue["500"]
+  (props) =>  balanced[props.color] ?? balanced["100"]
   };
 `;
 
@@ -26,7 +26,7 @@ const SubscribeForm = () => {
         </Layers>
 
         <Layers>
-          <Layers gutter="s" color="400">
+          <Layers gutter="s" color="200">
             <label htmlFor="name">Name</label>
             <input type="text" id="name" />
           </Layers>
