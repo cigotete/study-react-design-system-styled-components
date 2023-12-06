@@ -1,10 +1,10 @@
-import SubscribeForm from "./components/1-layers-pattern/SubscribeForm"
+import InfoForm from "./components/2-split-pattern/InfoForm"
 
 export function App() {
 
   return (
     <>
-      <SubscribeForm />
+      <InfoForm />
     </>
   )
 }
